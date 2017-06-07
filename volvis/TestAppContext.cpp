@@ -14,8 +14,7 @@
 TestAppContext::TestAppContext()
 	: _image(512, 512), _state(NONE),
 	_genCamera(60.0f, _image.width(), _image.height()),
-	//_genCamera(_image.width(), _image.height()),
-	_volume(25),/*_volume(0.1f, 25, 25, 25)*/ _cameraSwitch(false), _lookAt(false),
+	_volume(25), _cameraSwitch(false), _lookAt(false),
 	_bbox(_volume.width(), _volume.height(), _volume.depth()),
 	_window(nullptr) {
 }
@@ -33,7 +32,6 @@ void TestAppContext::init() {
 	_camera.approach(-10);
 
 	_rayCamera.position(pos);
-	//_rayCamera.approach(-5);
 	_rayCamera.approach(-2);
 }
 

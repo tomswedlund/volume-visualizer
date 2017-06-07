@@ -21,6 +21,7 @@ $RECYCLE.BIN/
 .vs
 Debug
 Release
+*.opensdf
 
 # =========================
 # Operating System Files

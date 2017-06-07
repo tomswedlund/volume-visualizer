@@ -39,9 +39,7 @@ private:
 	SphericalCamera _rayCamera;
 	Image _image;
 	PerspectiveCamera _genCamera;
-	//RadialVolume _volume;
 	SphericalVolume _volume;
-	//HomogenousVolume _volume;
 	BoundingBox _bbox;
 	std::vector<Ray> _rays;
 	std::vector<Vector3> _points;
