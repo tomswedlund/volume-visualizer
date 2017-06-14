@@ -9,42 +9,30 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{efcbb2e2-6ffa-4c40-8372-6d8af62df310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="windowing">
+      <UniqueIdentifier>{fce2316c-a401-4d47-8fd5-1b52bb1fa9a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="volumes">
+      <UniqueIdentifier>{78940294-1732-455c-a916-4221c2842c25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imaging">
+      <UniqueIdentifier>{fd07b12e-7384-46ad-8ebc-699f9aad1b0e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Ray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Utils.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Transform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GLUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Matrix3x3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BoundingBox.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="OrthogonalCamera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HomogenousVolume.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Integrator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Image.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Color.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SphericalCamera.cpp">
@@ -53,51 +41,60 @@
     <ClCompile Include="VolumeRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RadialVolume.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="PerspectiveCamera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestAppContext.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>math</Filter>
     </ClCompile>
-    <ClCompile Include="SDLGLWindow.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Transform.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix3x3.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox.cpp">
+      <Filter>math</Filter>
     </ClCompile>
     <ClCompile Include="SDLGLApp.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>windowing</Filter>
     </ClCompile>
-    <ClCompile Include="SphericalVolume.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SDLGLWindow.cpp">
+      <Filter>windowing</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAppContext.cpp">
+      <Filter>windowing</Filter>
     </ClCompile>
     <ClCompile Include="OutputAppContext.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>windowing</Filter>
+    </ClCompile>
+    <ClCompile Include="HomogenousVolume.cpp">
+      <Filter>volumes</Filter>
+    </ClCompile>
+    <ClCompile Include="SphericalVolume.cpp">
+      <Filter>volumes</Filter>
+    </ClCompile>
+    <ClCompile Include="RadialVolume.cpp">
+      <Filter>volumes</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>imaging</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Transform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Matrix3x3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GLUtils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Ray.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BoundingBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ICamera.h">
@@ -112,15 +109,6 @@
     <ClInclude Include="IVolume.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HomogenousVolume.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Image.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Color.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SphericalCamera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -130,29 +118,53 @@
     <ClInclude Include="PerspectiveCamera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RadialVolume.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Vector3.h">
+      <Filter>math</Filter>
     </ClInclude>
-    <ClInclude Include="FreeImagePlus.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Transform.h">
+      <Filter>math</Filter>
     </ClInclude>
-    <ClInclude Include="IAppContext.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Ray.h">
+      <Filter>math</Filter>
     </ClInclude>
-    <ClInclude Include="TestAppContext.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Matrix3x3.h">
+      <Filter>math</Filter>
     </ClInclude>
-    <ClInclude Include="SDLGLWindow.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="BoundingBox.h">
+      <Filter>math</Filter>
     </ClInclude>
     <ClInclude Include="SDLGLApp.h">
-      <Filter>Header Files</Filter>
+      <Filter>windowing</Filter>
     </ClInclude>
-    <ClInclude Include="SphericalVolume.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="SDLGLWindow.h">
+      <Filter>windowing</Filter>
+    </ClInclude>
+    <ClInclude Include="IAppContext.h">
+      <Filter>windowing</Filter>
+    </ClInclude>
+    <ClInclude Include="TestAppContext.h">
+      <Filter>windowing</Filter>
     </ClInclude>
     <ClInclude Include="OutputAppContext.h">
-      <Filter>Header Files</Filter>
+      <Filter>windowing</Filter>
+    </ClInclude>
+    <ClInclude Include="HomogenousVolume.h">
+      <Filter>volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="RadialVolume.h">
+      <Filter>volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="SphericalVolume.h">
+      <Filter>volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeImagePlus.h">
+      <Filter>imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
